@@ -271,6 +271,7 @@ PRODUCT_PACKAGES += \
     fstab.default \
     fstab.emmc \
     init.class_main.sh \
+    init.mi.btmac.sh \
     init.qcom.class_core.sh \
     init.qcom.early_boot.sh \
     init.qcom.post_boot.sh \
