@@ -32,6 +32,7 @@ firmware_directories /vendor/firmware_mnt/image/
 
 # the DIAG device node is not world writable/readable.
 /dev/diag                 0660   system     oem_2901
+/dev/xlog                 0660   system     audio
 /dev/mhi_*_pipe_4         0660   system     system
 
 /dev/genlock              0666   system     system
@@ -343,6 +344,9 @@ firmware_directories /vendor/firmware_mnt/image/
 /dev/uio1                 0660   system     system
 /dev/uio2                 0660   system     system
 
+# Spi IR Nodes
+/dev/ir_spi               0660   system     system
+
 # SSR devices
 /dev/subsys_*         0640   system     system
 
@@ -377,6 +381,12 @@ firmware_directories /vendor/firmware_mnt/image/
 
 # Kmsg device
 /dev/kmsg                                               0620   root       system
+
+# Mius iio devices
+/dev/iio:device*                                        0660   system     system
+/sys/devices/platform/us_prox.0/iio:device* buffer/enable                  0600 system system
+/sys/devices/platform/us_prox.0/iio:device* scan_elements/in_proximity_en  0600 system system
+/sys/devices/platform/us_prox.0/iio:device* scan_elements/in_timestamp_en  0600 system system
 
 # LED class devices
 /sys/class/leds/red      delay_on     0640    system    system
