@@ -232,6 +232,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     fastbootd
 
+# Fstab
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom
+
 # GPS
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps/etc/apdr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/apdr.conf \
