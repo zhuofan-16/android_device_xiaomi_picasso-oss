@@ -1,35 +1,24 @@
-The Redmi K20 Pro / Mi 9T Pro (codenamed _"raphael"_) is a flagship smartphone from Xiaomi announced in June 2019.
 
+ Device configuration for Redmi K30 5G
+ =========================================
 
-## Device specifications
+ The Redmi K30 5G (codenamed _"picasso"_) is a smartphone from Xiaomi.
 
-| Device                  | Redmi K20 Pro / Mi 9T Pro                                       |
-| ----------------------: | :-------------------------------------------------------------- |
-| SoC                     | Qualcomm SM8150 Snapdragon 855                                  |
-| CPU                     | 1x2.84 GHz Kryo 485 & 3x2.42 GHz Kryo 485 & 4x1.78 GHz Kryo 485 |
-| GPU                     | Adreno 640                                                      |
-| Memory                  | 6GB / 8GB                                                       |
-| Shipped Android version | Android 9, MIUI 10                                              |
-| Storage                 | 64GB / 128GB / 256GB                                            |
-| Battery                 | Li-Po 4000 mAh, non-removable                                   |
-| Dimensions              | 156.7 x 74.3 x 8.8 mm                                           |
-| Display                 | 1080 x 2340 pixels, 6.39 inches                                 |
-| Rear camera 1           | 48 MP, Dual-LED flash, HDR, panorama                            |
-| Rear camera 2           | 8 MP                                                            |
-| Rear camera 3           | 13 MP                                                           |
-| Front camera            | Motorized pop-up 20 MP, HDR                                     |
+ ## Device specifications
 
+ Basic   | Spec Sheet
+ -------:|:-------------------------
+ SoC     | Qualcomm SM7250 Snapdragon 765G 5G (7 nm)
+ CPU     | Octa-core (1x2.4 GHz Kryo 475 Prime & 1x2.2 GHz Kryo 475 Gold & 6x1.8 GHz Kryo 475 Silver)
+ GPU     | Adreno 620
+ Memory  | 6/8 GB RAM
+ Android Version | Android 10, upgradable to Android 11, MIUI 12
+ Storage | 64/128/256 GB
+ Battery | Li-Po 4500 mAh, non-removable
+ Display | IPS LCD, 120Hz, HDR10
+ Camera  | 64 MP, f/1.9, 26mm (wide), 1/1.72", 0.8µm, PDAF, 8 MP, f/2.2, 13mm (ultrawide), 1/4.0", 1.12µm, 5 MP, f/2.4, (macro), 2 MP, f/2.4, (depth)
 
-## Device picture
+ ## Device picture
 
-![Redmi K20 Pro / Mi 9T Pro](https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/beee478168e5c4fd0d66369386fddbbe.jpg)
-
-
-## Copyright
-
-```
-#
-# Copyright (C) 2021 The LineageOS Project
-#
-# SPDX-License-Identifier: Apache-2.0
-#
+ ![Redmi K30 5G](https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-redmi-k30-5g-2.jpg "Redmi K30 5G")
+ 
