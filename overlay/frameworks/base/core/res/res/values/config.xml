@@ -704,4 +704,7 @@
          black in software (to avoid aliasing or emulate a cutout that is not physically existent).
          -->
      <bool name="config_fillMainBuiltInDisplayCutout">true</bool>
+     
+     <!-- Whether to show min refresh rate in display settings -->
+     <bool name="config_show_min_refresh_rate_switch">true</bool>
 </resources>
