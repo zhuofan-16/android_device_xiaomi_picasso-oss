@@ -21,6 +21,9 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
     $(LOCAL_PATH)/overlay/packages/apps/CarrierConfig
 
+PRODUCT_PACKAGES += \
+    NotchNoFillOverlay
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
@@ -223,6 +226,13 @@ PRODUCT_PACKAGES += \
 # DTB
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilt/dtb.img:dtb.img
+
+# Device Settings
+PRODUCT_PACKAGES += \
+    XiaomiParts
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/parts/privapp-permissions-parts.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-parts.xml
 
 # Fastbootd
 PRODUCT_PACKAGES += \
