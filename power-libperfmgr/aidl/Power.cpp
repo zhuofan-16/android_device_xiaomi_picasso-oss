@@ -43,6 +43,7 @@ namespace pixel {
 using ::aidl::google::hardware::power::impl::pixel::PowerHintSession;
 
 constexpr char kPowerHalStateProp[] = "vendor.powerhal.state";
+constexpr char kPowerHalAudioProp[] = "vendor.powerhal.audio";
 constexpr char kPowerHalRenderingProp[] = "vendor.powerhal.rendering";
 constexpr char kPowerHalAdpfRateProp[] = "vendor.powerhal.adpf.rate";
 constexpr int64_t kPowerHalAdpfRateDefault = -1;
@@ -64,6 +65,12 @@ Power::Power(std::shared_ptr<HintManager> hm, std::shared_ptr<DisplayLowPower> d
         mSustainedPerfModeOn = true;
     } else {
         LOG(INFO) << "Initialize PowerHAL";
+    }
+
+    state = ::android::base::GetProperty(kPowerHalAudioProp, "");
+    if (state == "AUDIO_STREAMING_LOW_LATENCY") {
+        LOG(INFO) << "Initialize with AUDIO_LOW_LATENCY on";
+        mHintManager->DoHint(state);
     }
 
     state = ::android::base::GetProperty(kPowerHalRenderingProp, "");
@@ -106,6 +113,8 @@ ndk::ScopedAStatus Power::setMode(Mode type, bool enabled) {
             [[fallthrough]];
         case Mode::DISPLAY_INACTIVE:
             [[fallthrough]];
+        case Mode::AUDIO_STREAMING_LOW_LATENCY:
+            [[fallthrough]];
         default:
             if (enabled) {
                 mHintManager->DoHint(toString(type));
@@ -142,6 +151,8 @@ ndk::ScopedAStatus Power::setBoost(Boost type, int32_t durationMs) {
         case Boost::DISPLAY_UPDATE_IMMINENT:
             [[fallthrough]];
         case Boost::ML_ACC:
+            [[fallthrough]];
+        case Boost::AUDIO_LAUNCH:
             [[fallthrough]];
         default:
             if (mSustainedPerfModeOn) {
