@@ -48,6 +48,7 @@
     <string name="thermal_streaming">流媒体</string>
 
     <!-- Dirac settings -->
+    <string name="dirac_enable">打开米音</string>
     <string name="dirac_title">米音</string>
     <string name="dirac_summary">使用米音和 Hi-Fi 来优化音质</string>
     <string name="dirac_headset_title">耳机类型</string>

@@ -20,6 +20,7 @@
 
     <!-- Dirac settings -->
     <string name="dirac_enable">Enable dirac</string>
+    <string name="dirac_summary">Optimize sound quality with Dirac, Hi-Fi</string>
     <string name="dirac_title">Dirac sound enhancer</string>
     <string name="dirac_headset_title">Headset type</string>
     <string name="dirac_hifi_enable_title"> Enable Hi-fi</string>
@@ -76,6 +77,7 @@
     <string name="thermal_dialer">Dialer</string>
     <string name="thermal_gaming">Gaming</string>
     <string name="thermal_youtube">Youtube</string>
+    <string name="thermal_streaming">Streaming</string>
 
     <!-- Touch Control Settings -->
     <string name="touch_control_title">Touch Control</string>
